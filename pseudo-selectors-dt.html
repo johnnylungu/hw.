@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Directory Tree | CSS Pseudo selectors</title>
+    <style>
+        body{
+            background-color: #222;
+        }
+        .tree{
+            color:white;
+            font-family: Arial;
+            font-size: 64px;
+        
+        }
+        .folder {
+            background-image: url(Actions-document-open-icon\ 2.png);
+            
+            background-repeat: no-repeat;
+            padding: 24px 0 24px 72px;
+        
+        line-height: 18px;
+            list-style-type:"┠" ;
+        
+
+        }
+        .folder:hover{
+            background-color: #808080;
+        }
+        .file {
+            background-image: url(Actions-document-properties-icon\ 3.png);
+            
+            background-repeat: no-repeat;
+            padding: 24px 0 24px 72px;
+        
+        line-height: 0px;
+            list-style-type:"┠" ;
+        
+
+        }
+        .file:hover{
+            background-color: snow;
+        }
+        .file:last-child{
+            list-style-type:"┖" ;
+            
+        }
+
+        .folder:last-child{
+            list-style-type:"┖" ;
+
+        }
+        .empty{   background-image: url(Actions-document-open-folder-icon.png);
+            
+         
+        
+
+        }
+
+        .name{
+            font-size: 18px;
+        }
+        .file {
+            background-image: url(Actions-document-properties-icon\ 3.png);
+            
+            background-repeat: no-repeat;
+            padding: 24px 0 24px 72px;
+        
+        line-height: 0px;
+            list-style-type:"┠" ;
+        
+
+        }
+        .file:hover{
+            background-color:#d9d9d9;
+        }
+        .file:last-child{
+            list-style-type:"┖" ;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul class="tree">
+
+        <li class="folder">
+         <div class="name"> PROJECT [DONE]</div>
+        </li>
+
+        <ul class="tree">
+            <li class="file">
+              <div class="name" > File 1</div>
+
+            </li>
+            <li class="file">
+                <div class="name">File 2</div>
+
+            </li>
+
+        </ul>
+
+        
+
+        
+
+    
+
+        <li class="folder">
+       <div class="name">PROJECT [NOW]</div>
+        </li>
+
+        <ul class="tree">
+            <li class="file">
+              <div class="name" > File 1</div>
+
+            </li>
+            <li class="file">
+                <div class="name">File 2</div>
+
+            </li>
+
+        </ul>
+        
+
+        
+        <li class="folder empty">
+           <div class="name"> PROJECT [TBD]</div> 
+
+        </li>
+        
+    </ul>
+    
+    
+</body>
+</html>
